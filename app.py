@@ -6,7 +6,7 @@ st.title("Hello word")
 
 st.header("En este espacio comienzo a desarrollar mis apps de interfaces multimodales")
 st.write("Facilmente puedo hacer backed y fortend")
-image = Image.open("04_01_2014.jpeg")
+image = Image.open("04_01_2014.jpg")
 
 st.image(image, caption="04_01_2014")
 
