@@ -8,7 +8,7 @@ st.header("En este espacio comienzo a desarrollar mis apps de interfaces multimo
 st.write("Facilmente puedo hacer backed y fortend")
 image = Image.open("images.jpeg")
 
-st.image(image, caption="losquemal")
+st.image(image, caption="04_01_2014")
 
 texto = st.text_input("El mejor jugador de la historia"," Un crack goles de cabeza, pierna derecha, pierna izquierda, alto, veloz, fuerte")
 st.write("Esto es el fucking futbol",texto)
