@@ -6,9 +6,9 @@ st.title("Hello word")
 
 st.header("En este espacio comienzo a desarrollar mis apps de interfaces multimodales")
 st.write("Facilmente puedo hacer backed y fortend")
-image = Image.open("04_01_2014.jpg")
+image = Image.open("valen.jpeg")
 
-st.image(image, caption="04_01_2014")
+st.image(image, caption="paraiso")
 
 texto = st.text_input("El mejor jugador de la historia"," Un crack goles de cabeza, pierna derecha, pierna izquierda, alto, veloz, fuerte")
 st.write("Esto es el fucking futbol",texto)
