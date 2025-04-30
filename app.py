@@ -29,9 +29,18 @@ col1, col2 = st.columns(2)
 with col1:
     st.subheader("🌳 Conexión")
     st.write("¿Sientes que la naturaleza influye en tu bienestar?")
-    acuerdo = st.checkbox("Sí, totalmente")
-    if acuerdo:
+    
+    respuesta = st.radio(
+        "Selecciona una opción:",
+        ("Sí, totalmente", "A veces", "No mucho")
+    )
+
+    if respuesta == "Sí, totalmente":
         st.success("🌞 ¡Qué hermoso reconocerlo!")
+    elif respuesta == "A veces":
+        st.info("🍂 A veces basta con una caminata tranquila.")
+    else:
+        st.warning("🌧 Tal vez necesites más tiempo al aire libre.")
 
     # NUEVAS OPCIONES DE CONEXIÓN
     actividad = st.selectbox(
