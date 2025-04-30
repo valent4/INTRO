@@ -33,6 +33,16 @@ with col1:
     if acuerdo:
         st.success("🌞 ¡Qué hermoso reconocerlo!")
 
+    # NUEVAS OPCIONES DE CONEXIÓN
+    actividad = st.selectbox(
+        "¿Qué actividad te hace sentir más conectad@ con la naturaleza?",
+        ("Caminar descalzo en el pasto", 
+         "Escuchar el sonido del bosque",
+         "Observar el cielo estrellado", 
+         "Tocar plantas o árboles")
+    )
+    st.write(f"🍃 Actividad elegida: {actividad}")
+
 # Segunda columna
 with col2:
     st.subheader("🍃 Tu Rol")
@@ -44,6 +54,5 @@ with col2:
 # Pie de página
 st.markdown("---")
 st.markdown("🌸 *Gracias por visitar este pequeño homenaje a la naturaleza.*")
-
 
 
