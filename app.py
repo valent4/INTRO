@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-# Configurar el título de la página
+# Configurar el título y el ícono de la pestaña
 st.set_page_config(page_title="Explorando la Naturaleza", page_icon="🌱")
 
 # Título principal
@@ -13,7 +13,7 @@ st.write("Aquí combino mis habilidades de desarrollo backend y frontend para cr
 
 # Imagen destacada
 image = Image.open("valen.jpeg")
-st.image(image, caption="Un rincón de paz en la Tierra", use_column_width=True)
+st.image(image, caption="Un rincón de paz en la Tierra", use_container_width=True)
 
 # Entrada de texto
 texto = st.text_input("¿Qué representa la naturaleza para ti?", "Es vida, equilibrio y belleza.")
@@ -44,5 +44,6 @@ with col2:
 # Pie de página
 st.markdown("---")
 st.markdown("🌸 *Gracias por visitar este pequeño homenaje a la naturaleza.*")
+
 
 
